@@ -4,13 +4,13 @@
 
 Sigma Squared is an open-source, decentralized gambling protocol, built on top of the Polygon blockchain. It was created with the goal of providing a truly decentralized gambling solution, where the players are the house. Randomness and fairness in games is ensured using Chainlink’s verifiable random functions.
 
-The game smart contracts and house treasury are owned by a DAO, which in turn is controlled using voting interests in the form of an ERC20 token called Sigma Squared (SIGMA2). Players can place bets denominated in SIGMA2 for 0% house edge, enabling truly actuarially fair gambling. This is not something players can obtain elsewhere at the time of writing, as far as the writers are aware. Users can also place bets denominated in MATIC and USDC for a small house edge, which is set by the community/DAO. In the future, the community can choose to deploy game contracts for other tokens. Any contract balances that arise as the result of this house edge are completely owned and controlled by the DAO. The community may vote to distribute game contract balances in the future in the form of dividends or a buyback, for example.
+The game smart contracts and house treasury are owned by a DAO, which in turn is controlled using voting interests in the form of an ERC20 token called Sigma Squared (SIGMA2). Players can place bets denominated in SIGMA2 for 0% house edge, enabling actuarially fair gambling. This is not something players can obtain elsewhere at the time of writing, as far as the writers are aware. Users can also place bets denominated in MATIC and USDC for a small house edge, which is set by the community/DAO. In the future, the community can choose to deploy game contracts for other tokens. Any contract balances that arise as the result of this house edge are completely owned and controlled by the DAO. The community may vote to distribute game contract balances in the future in the form of dividends or a buyback, for example.
 
-To ensure that the DAO, and in turn the game contracts / house are truly controlled by players, 85% of the initial circulating supply of Sigma Squared tokens will be given away to players in the form of rewards. This will happen over the first year of Sigma Squared’s existence. A certain number of tokens are distributed to players per block, prorated based on each player’s largest loss in a rewards round. This encourages use of the game contracts, and helps reduce variance, since the largest losers are rewarded more. A more detailed explanation can be found in the ‘Rewards’ section of the documentation.
+To ensure that the DAO, and in turn the game contracts / house are actually controlled by players, 90% of the initial circulating supply of Sigma Squared tokens will be given away to players in the form of rewards. This will happen over the first year of Sigma Squared’s existence. A certain number of tokens are distributed to players per block, prorated based on each player’s largest loss in a rewards round. This encourages use of the game contracts, and helps reduce variance, since the largest losers are rewarded more. A more detailed explanation can be found in the ‘Rewards’ section of the documentation.
 
 ## Background
 
-The advent of blockchains that support Smart Contract capabilities and verifiable random functions that ensure truly fair randomness, have made it possible to create a truly decentralized gambling protocol. Games can be completely decentralized and have their randomness ensured with VRFs.
+The advent of blockchains that support Smart Contract capabilities and verifiable random functions that ensure truly fair randomness, have made it possible to create a decentralized gambling protocol. Games can be completely decentralized and have their randomness ensured with VRFs.
 
 This flips the normal power dynamics of gambling on their head. Instead of a centralized house maintaining the games and collecting all the profits, players can own and control the house themselves. A protocol can be designed where any overall house profit can stay within the player community. This empowers players by reducing the cost of gambling. In addition, if the protocol controls its own token, bets with zero expected value can be offered if denominated in this token.
 
@@ -38,7 +38,7 @@ The Sigma Squared token is at the center of the entire ecosystem. It is an ERC20
 
 The game Smart Contracts are what users actually interact with to place bets. Initially, there will be two types of game contracts, described below. However in the future, developers can add other types, and release them by submitting a proposal to the DAO.
 
-One set of game contracts allows players to bet on a Bernoulli random variable. A bet can be placed by specifying an amount and a multiplier. The outcome will either be a win or a loss. As an example, consider a player that places a bet with an amount of 1 USDC, a multiplier of 3x, and the house edge is 0%. There is a 33.33% chance the player wins 3 USDC (+2 USDC), and a 66.66% then do not get back their original bet (-1 USDC). If there is a positive house edge it will change the probabilities accordingly.
+One set of game contracts allows players to bet on a Bernoulli random variable. A bet can be placed by specifying an amount and a multiplier. The outcome will either be a win or a loss. As an example, consider a player that places a bet with an amount of 1 USDC, a multiplier of 3x, and the house edge is 0%. There is a 33.33% chance the player wins 3 USDC (+2 USDC), and a 66.66% they do not get back their original bet (-1 USDC). If there is a positive house edge it will change the probabilities accordingly.
 
 The other set of game contracts allow players to enter a lottery. Any amount can be deposited into the lottery, and a single user wins the entire amount at the end. The probability of winning is weighted based on the amount deposited. There can be a house edge associated with the lottery; when a user deposits into the lottery, a percentage of that deposit is taken out of the lottery pool, and held in the contract as profit.
 
@@ -48,7 +48,7 @@ Any games denominated in SIGMA2 have 0% house edge. This allows users to gamble 
 
 ### Rewards Contracts
 
-In order to ensure the initial distribution is done in a fair way, a set of rewards contracts are deployed that give away 85% of the initial SIGMA2 supply to players. This way, players are involved in the community, are entitled to any profits, and can help shape the future of the ecosystem.
+In order to ensure the initial distribution is done in a fair way, a set of rewards contracts are deployed that give away 90% of the initial SIGMA2 supply to players. This way, players are involved in the community, are entitled to any profits, and can help shape the future of the ecosystem.
 
 Rewards will be given out over the course of a year, at which point the rewards system will be decommissioned. Rewards are given out in rounds which last 43200 blocks (\~ 1 day with Polygon block times). A set amount of tokens are distributed every block. The rewards are prorated and allocated to players based on each player’s largest loss in a given round.
 
@@ -70,7 +70,7 @@ There is no initial offering, or any centralized offering of tokens. Instead the
 
 #### **Total Circulating: 10,000,000 SIGMA2**
 
-**Player Rewards: 8,500,000 (85%)**
+**Player Rewards: 9,000,000 (90%)**
 
 * To ensure the vast majority of tokens are in the hands of players.
 
@@ -78,7 +78,7 @@ There is no initial offering, or any centralized offering of tokens. Instead the
 
 * To be used for future development, marketing, and community growth.
 
-**Early developers, test users, and investors: 1,000,000 SIGMA2 (10%)**
+**Early developers, test users, and investors: 500,000 SIGMA2 (5%)**
 
 * This is a reward for early developers, users, and investors. This ensures the people behind the vision hold a significant controlling stake in the DAO initially, to prevent any sort of hostile takeover or other action.
 

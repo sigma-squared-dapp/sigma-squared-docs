@@ -26,7 +26,7 @@ GitHub links: TODO
 
 ### Rewards Contracts
 
-This is the set of contracts that distribute rewards to players. For more information on how the rewards are distributed, see the ‘Rewards’ section of the documentation. The game contracts report wins and losses to these contracts, because rewards are distributed based on betting activity.
+This is the set of contracts that distribute rewards to players. For more information on how the rewards are distributed, see the [Rewards](rewards.md) section of the documentation. The game contracts report wins and losses to these contracts, because rewards are distributed based on betting activity.
 
 After the distribution of all rewards from the initial token allocation, these contracts will be decommissioned.
 
