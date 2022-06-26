@@ -2,9 +2,9 @@
 
 ## Overview
 
-To ensure players hold the vast majority of SIGMA2 tokens, 85% of the initial supply of SIGMA2 will be given away to players in the form of awards. These tokens are locked in reward contracts, from which players can claim rewards they are entitled to. The amount of rewards a player receives depends on their largest loss within a given rewards round. The details of this are explained below in the next section.
+To ensure players hold the vast majority of SIGMA2 tokens, 90% of the initial supply of SIGMA2 will be given away to players in the form of awards. These tokens are locked in rewards contracts, from which players can claim rewards they are entitled to. The per block emission rate is set such that all rewards will be given out over the course of one year from the launch.  The amount of rewards a player receives depends on their largest loss within a given rewards round. The details of this are explained below in the next section.
 
-There are three different rewards contracts, one for each token players can place bets in. 50% of the rewards will be allocated for players betting in SIGMA2, 25% for players betting in MATIC, and 25% for players betting in USDC. This is to slightly encourage the use of SIGMA2 for betting over other tokens.
+There are three different rewards contracts, one for each token players can place bets in. 50% of the rewards will be allocated for players betting in SIGMA2, 25% for players betting in MATIC, and 25% for players betting in USDC. This is to slightly encourage the use of SIGMA2 for betting over other tokens.  The 9,000,000 SIGMA2 allocated for rewards is split between these three rewards contracts as such.
 
 ![Rewards Allocation](<assets/Rewards Allocation.png>)
 
@@ -32,25 +32,25 @@ There is a separate rewards contract for each token players can place bets with.
 
 |                                   |   |
 | --------------------------------- | - |
-| Polygon mainnet address:          |   |
-| Emission rate:                    |   |
-| Min round length:                 |   |
-| Polygon testnet (Mumbai) address: |   |
+| Polygon mainnet address:          | [0xaab34069ef41BcD10645FE0eeDbbD1416bDF8c91](https://polygonscan.com/address/0xaab34069ef41BcD10645FE0eeDbbD1416bDF8c91) |
+| Emission rate:                    | 0.285352 SIGMA2 per block |
+| Min round length:                 | 43200 blocks (~ 1 day) |
+| Polygon testnet (Mumbai) address: | [0x51985A6b404Fae2B520fE4C455d65670ac0Ed035](https://mumbai.polygonscan.com/address/0x51985A6b404Fae2B520fE4C455d65670ac0Ed035) |
 
 **MATIC Games Rewards Contract:** TODO
 
 |                                   |   |
 | --------------------------------- | - |
-| Polygon mainnet address:          |   |
-| Emission rate:                    |   |
-| Min round length:                 |   |
-| Polygon testnet (Mumbai) address: |   |
+| Polygon mainnet address:          | [0x0D5B50B1557eE651eA5a0e342b06866F87b02388](https://polygonscan.com/address/0x0D5B50B1557eE651eA5a0e342b06866F87b02388) |
+| Emission rate:                    | 0.142676 SIGMA2 per block |
+| Min round length:                 | 43200 blocks (~ 1 day) |
+| Polygon testnet (Mumbai) address: | [0x2A06486D2591Cb0eB370d5bC2E1Fa73A1D07dA3f](https://mumbai.polygonscan.com/address/0x2A06486D2591Cb0eB370d5bC2E1Fa73A1D07dA3f) |
 
 **USDC Games Rewards Contract:** TODO
 
 |                                   |   |
 | --------------------------------- | - |
-| Polygon mainnet address:          |   |
-| Emission rate:                    |   |
-| Min round length:                 |   |
-| Polygon testnet (Mumbai) address: |   |
+| Polygon mainnet address:          | [0x460b7916e5921Eb527570FbA22B4797BB677240F](https://polygonscan.com/address/0x460b7916e5921Eb527570FbA22B4797BB677240F) |
+| Emission rate:                    | 0.142676 SIGMA2 per block |
+| Min round length:                 | 43200 blocks (~ 1 day) |
+| Polygon testnet (Mumbai) address: | [0xDD3f82f7a5Fc90dcC575E46275E8380589DaAfE5](https://mumbai.polygonscan.com/address/0xDD3f82f7a5Fc90dcC575E46275E8380589DaAfE5) |

@@ -2,7 +2,7 @@
 
 ### What is Sigma Squared?
 
-Sigma Squared is a decentralized gambling protocol where the players are the house. It is non-custodial and anyone with a Polygon wallet can play. Players can place bets with 0% house edge using SIGMA2 tokens, or place bets with a small house edge using other tokens. Any house profit is owned by SIGMA2 token holders. To learn more about the distribution of SIGMA2 tokens, visit the ‘Tokenonmics’ section in this documentation.
+Sigma Squared is a decentralized gambling protocol where the players are the house. It is non-custodial and anyone with a Polygon wallet can play. Players can place bets with 0% house edge using SIGMA2 tokens, or place bets with a small house edge using other tokens. Any house profit is owned by SIGMA2 token holders. To learn more about the distribution of SIGMA2 tokens, visit the [Tokenonmics](tokenomics.md) section in this documentation.
 
 ### How is game fairness ensured?
 
@@ -14,4 +14,4 @@ You need a Metamask wallet (or other injected browser wallet), and assets on the
 
 ### How can I get SIGMA2 tokens?
 
-You can either place bets in USDC or MATIC to earn rewards in SIGMA2 (see Rewards section), or you can trade on the secondary market (see Uniswap listing).
+You can either place bets in USDC or MATIC to earn rewards in SIGMA2 (see [Rewards](rewards.md) section), or you can trade on the secondary market (see [Uniswap listing](uniswap.md)).

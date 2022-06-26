@@ -6,7 +6,7 @@ Sigma Squared is an open-source, decentralized gambling protocol, built on top o
 
 The game smart contracts and house treasury are owned by a DAO, which in turn is controlled using voting interests in the form of an ERC20 token called Sigma Squared (SIGMA2). Players can place bets denominated in SIGMA2 for 0% house edge, enabling actuarially fair gambling. This is not something players can obtain elsewhere at the time of writing, as far as the writers are aware. Users can also place bets denominated in MATIC and USDC for a small house edge, which is set by the community/DAO. In the future, the community can choose to deploy game contracts for other tokens. Any contract balances that arise as the result of this house edge are completely owned and controlled by the DAO. The community may vote to distribute game contract balances in the future in the form of dividends or a buyback, for example.
 
-To ensure that the DAO, and in turn the game contracts / house are actually controlled by players, 90% of the initial circulating supply of Sigma Squared tokens will be given away to players in the form of rewards. This will happen over the first year of Sigma Squared’s existence. A certain number of tokens are distributed to players per block, prorated based on each player’s largest loss in a rewards round. This encourages use of the game contracts, and helps reduce variance, since the largest losers are rewarded more. A more detailed explanation can be found in the ‘Rewards’ section of the documentation.
+To ensure the DAO, and in turn the game contracts / house are actually controlled by players, 90% of the initial circulating supply of Sigma Squared tokens will be given away to players in the form of rewards. This will happen over the first year of Sigma Squared’s existence. A certain number of tokens are distributed to players per block, prorated based on each player’s largest loss in a rewards round. This encourages use of the game contracts, and helps reduce variance, since the largest losers are rewarded more. A more detailed explanation can be found in the [Rewards](rewards.md) section of the documentation.
 
 ## Background
 
@@ -36,11 +36,11 @@ The Sigma Squared token is at the center of the entire ecosystem. It is an ERC20
 
 ### Game Contracts
 
-The game Smart Contracts are what users actually interact with to place bets. Initially, there will be two types of game contracts, described below. However in the future, developers can add other types, and release them by submitting a proposal to the DAO.
+The game Smart Contracts are what users actually interact with to place bets. Initially, there will be two types of game contracts, described below. However, in the future developers can add other types, and release them by submitting proposals to the DAO.
 
 One set of game contracts allows players to bet on a Bernoulli random variable. A bet can be placed by specifying an amount and a multiplier. The outcome will either be a win or a loss. As an example, consider a player that places a bet with an amount of 1 USDC, a multiplier of 3x, and the house edge is 0%. There is a 33.33% chance the player wins 3 USDC (+2 USDC), and a 66.66% they do not get back their original bet (-1 USDC). If there is a positive house edge it will change the probabilities accordingly.
 
-The other set of game contracts allow players to enter a lottery. Any amount can be deposited into the lottery, and a single user wins the entire amount at the end. The probability of winning is weighted based on the amount deposited. There can be a house edge associated with the lottery; when a user deposits into the lottery, a percentage of that deposit is taken out of the lottery pool, and held in the contract as profit.
+The other set of game contracts allow players to enter a lottery. Any amount can be deposited into the lottery, and a single user wins the entire amount at the end. The probability of winning is weighted based on the amount deposited. There can be a house edge associated with the lottery; when a user deposits into the lottery, a percentage of that deposit is taken out of the lottery pool and held in the contract as profit.
 
 All the games contracts are completely owned and controlled by the DAO. Parameters, such as house edge and risk parameters, are governed by the DAO. All profit derived from any games with positive house edge is completely owned by the DAO.
 
@@ -52,13 +52,13 @@ In order to ensure the initial distribution is done in a fair way, a set of rewa
 
 Rewards will be given out over the course of a year, at which point the rewards system will be decommissioned. Rewards are given out in rounds which last 43200 blocks (\~ 1 day with Polygon block times). A set amount of tokens are distributed every block. The rewards are prorated and allocated to players based on each player’s largest loss in a given round.
 
-See the 'Rewards' section in the documentation for more details.
+See the [Rewards](rewards.md) section in the documentation for more details.
 
 ### Front-end Interfaces
 
 The previous three components all exist on the Polygon blockchain. Interacting directly with the Smart Contracts programmatically is something that requires technical knowledge and is likely not what users imagine when they envision gambling. A front-end web app enables interaction in a more user-friendly way.
 
-The on-chain game contracts are basic building blocks for gambling games that only specify the payout distribution. Front-end web interfaces can build on top of these to provide a more interesting gaming experience. Betting on a Bernoulli random variable by specifying an amount and a multiplier alone may not be very exciting, however many more interesting games have this type of payout structure. For example flipping a coin, roulette games, poker hands flipping, and ‘crash’ style games all have a Bernoulli payout structure.
+The on-chain game contracts are basic building blocks for gambling games that only specify the payout distribution. Front-end web interfaces can build on top of these to provide a more engaging gaming experience. Betting on a Bernoulli random variable by specifying an amount and a multiplier alone may not be very exciting, however many more interesting games have this type of payout structure. For example flipping a coin, roulette games, poker hands flipping, and ‘crash’ style games all have a Bernoulli payout structure.
 
 Initially, a single open-source front-end interface will exist for Sigma Squared with a few basic games. However one of the goals of community development is to expand on the game selection and experience available to users. Anyone with web development knowledge can build a gambling application using Sigma Squared as the back-end. To encourage this sort of development, 5% of the initial circulating supply of SIGMA2 was given to the DAO treasury, with the intention of distributing it, in the future, to developers who expand on the user experience by creating new games or improving on existing ones. For example, the DAO could hold competitions or commission new game creation using these tokens as payment / reward.
 
@@ -82,7 +82,7 @@ There is no initial offering, or any centralized offering of tokens. Instead the
 
 * This is a reward for early developers, users, and investors. This ensures the people behind the vision hold a significant controlling stake in the DAO initially, to prevent any sort of hostile takeover or other action.
 
-In addition to this circulating supply, 2,500,000 SIGMA2 was added to the game contracts denominated in SIGMA2, to payout future bet winners.
+In addition to this circulating supply, 2,500,000 SIGMA2 was added to the Bernoulli game contract denominated in SIGMA2, to payout future bet winners.
 
 #### **Total: 12,500,000 SIGMA2**
 
@@ -92,7 +92,7 @@ Because games are offered with 0% house edge when bets are denominated in SIGMA2
 
 To deal with this, the DAO has the power to mint and burn SIGMA2 tokens. If the SIGMA2 game contact balances become extremely low, the DAO will mint more SIGMA2 tokens to add to the game balances. If the game contract balances are outrageously high, the DAO will withdraw SIGMA2 tokens and burn them.
 
-This means the circulating supply of SIGMA2 tokens will also be a random walk (or martingale) over time. The expected value of the circulated supply in the future is whatever the current circulating supply is, but it could still drift in one direction or the other. In other words, SIGMA2 is neither inflationary or deflationary in expectation, but could experience short-term inflation or deflation from random drift.
+This means the circulating supply of SIGMA2 tokens will also be a random walk over time. The expected value of the circulating supply in the future is whatever the current circulating supply is, but it could still drift in one direction or the other. In other words, SIGMA2 is neither inflationary or deflationary in expectation, but could experience short-term inflation or deflation from random drift.
 
 The profits from games denominated in other tokens, that have some positive house edge, could be used to buy back and burn SIGMA2 tokens, effectively making it deflationary in the long-run. However, the exact mechanism used to distribute house profit is left to the DAO to decide.
 
@@ -126,4 +126,4 @@ The current state of Sigma Squared is intended to be only a starting point. Thus
 
 Old game contracts can be replaced, or new game contracts deployed using DAO proposals. If a game contract needs to be replaced, a proposal can be made which programmatically drains the old game contract, deploys a new one, and transfers all funds to the new contract. If a new game contract needs to be deployed, this can also be done using a similar process.
 
-The initial front-end interface that players use to place bets, is completely open source and hosted on IPFS. Development for this can follow existing processes used across the open source community. In addition to this, anyone can create their own front-end for Sigma Squared. The more front-end interfaces developed, the more variety in gambling experience players have and the more decentralized Sigma Squared become.
+The initial front-end interface that players use to place bets is completely open source and hosted on IPFS. Development for this can follow existing processes used across the open source community. In addition to this, anyone can create their own front-end for Sigma Squared. The more front-end interfaces developed, the more variety in gambling experience players have and the more decentralized Sigma Squared become.

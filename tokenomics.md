@@ -6,7 +6,7 @@ A fair initial mint is needed to ensure the vision of a truly decentralized and 
 
 ### **Total Circulating: 10,000,000 SIGMA2**
 
-**Player Rewards: 8,500,000 SIGMA2 (85%)**
+**Player Rewards: 9,000,000 SIGMA2 (90%)**
 
 - To ensure the vast majority of tokens are in the hands of players.
 
@@ -14,7 +14,7 @@ A fair initial mint is needed to ensure the vision of a truly decentralized and 
 
 - To be used for future development, marketing, and community growth.
 
-**Early developers, test users, and investors: 1,000,000 SIGMA2  (10%)**
+**Early developers, test users, and investors: 500,000 SIGMA2  (5%)**
 
 - This is a reward for early developers, users, and investors.  This ensures the people behind the vision hold a significant controlling stake in the DAO initially, to prevent any sort of hostile takeover or other action.
 

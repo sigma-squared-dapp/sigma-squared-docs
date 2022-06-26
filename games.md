@@ -4,35 +4,29 @@ This set of game contracts allows users to bet on a Bernoulli random variable.  
 
 There is a different contract deployed for each type of token accepted as bets.  Currently that includes USDC, MATIC, and SIGMA2.
 
-### Notable params: TODO
+### Notable params:
 
 | Name | Description |
 | --- | --- |
-| houseEdge | |
-| maxWinAmount | |
-| minBetAmount | |
+| houseEdge | The house edge for each bet placed as a percentage. |
+| maxLoss | The maximum possible win allowed as a percentage of the contract's total balance. |
+| minBet | The minimum bet allowed. |
 
 
-Github Links: TODO
-
-Contract Address: TODO
+Contract list: [BernoulliGameSigmaSquared](https://github.com/sigma-squared-dapp/sigma-squared-core/blob/master/contracts/BernoulliGameSigmaSquared.sol), [BernoulliGameNative](https://github.com/sigma-squared-dapp/sigma-squared-core/blob/master/contracts/BernoulliGameNative.sol), [BernoullilGameUSDC](https://github.com/sigma-squared-dapp/sigma-squared-core/blob/master/contracts/BernoulliGameUSDC.sol)
 
 # Lottery Games
 
-This set of game contracts consists of lottery style games.  Players can enter a lottery by depositing some amount of tokens.  At the end of the lottery period a single player is picked as a winner, and they receive the entire prize pool.  The probability of each player winning is weighted based on their deposit amount.  If there is some house edge specified, then that percentage is taken out of each deposit and held as profit instead of going to the lottery pool.
+This set of game contracts consists of lottery style games.  Players can enter a lottery by depositing some amount of tokens.  At the end of the lottery period a single player is picked as a winner, and they receive the entire prize pool.  The probability of each player winning is weighted based on their deposit amount.  If there is some house edge specified, that percentage is taken out of each deposit and held as profit instead of going to the lottery pool.
 
 ### Notable params: TODO
 
 | Name | Description |
 | --- | --- |
-| houseEdge | |
-| minBetAmount | |
-| roundLengthBlocks | |
+| houseEdge | The house edge for each deposit as a percentage. |
+| minBlocksPerRound | The minimum number of blocks that must pass before a lottery round can be ended and settled. |
 
-Github Links: TODO
-
-Contract Address: TODO
-
+Contract list: [LotterySigmaSquared](https://github.com/sigma-squared-dapp/sigma-squared-core/blob/master/contracts/LotterySigmaSquared.sol), [LotteryNative](https://github.com/sigma-squared-dapp/sigma-squared-core/blob/master/contracts/LotteryNative.sol), [LotteryUSDC](https://github.com/sigma-squared-dapp/sigma-squared-core/blob/master/contracts/LotteryUSDC.sol)
 
 # Fairness
 
