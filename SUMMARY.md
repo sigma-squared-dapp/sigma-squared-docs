@@ -10,3 +10,5 @@
 * [Metamask](metamaskHelp.md)
 * [How To Get Assets Into Polygon](polygonHelp.md)
 * [Uniswap Listing](uniswap.md)
+* [Links](links.md)
+* [Launch App](https://play.sigmasquared.bet)
